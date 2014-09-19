@@ -1,0 +1,97 @@
+@import (reference) '../../../lib/bootstrap/less/bootstrap.less';
+@import '../../core/less/vars.less';
+body, html{
+	height: 100%;
+}
+.full-height{
+	height: 100%;
+}
+.img-vertical-responsive{
+	height: 100%;
+	display: block;
+}
+.left-aside {
+	-webkit-transition: .5s;
+	transition: .5s;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background-color: black;
+	z-index: 1004;
+	&.open {
+		width:100% !important;
+	}
+}
+.right-main-content{
+	position:relative;
+	background-color: silver;
+	overflow-x: hidden;
+	.full-height();
+}
+
+.content-outer-wrapper{
+	.full-height();
+}
+.content-inner-wrapper{
+	width:100%;
+	height: 100%;
+	position: relative;
+	background-color: @custom-gray-4;
+}
+.header-inner-wrapper{
+	width:100%;
+	height: 100%;
+
+}
+
+.lupus-asside-offset{
+	.col-xs-offset-2();
+	-webkit-transition: .5s;
+	transition: .5s;
+	&.open{
+		-webkit-transform: translate(100%,0) !important;
+		transform: translate(100%, 0) !important;
+	}
+}
+/********** SCROLL *******************/
+.lupus-scroll{
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+    -webkit-overflow-scrolling: touch;
+	overflow-y: auto;
+	overflow-x: hidden;
+	& .lupus-scroll-auto-hide{
+		overflow-y:hidden;
+	}
+}
+.lupus-scroll.lupus-scroll-auto-hide:hover,
+.lupus-scroll.lupus-scroll-auto-hide:focus{
+	overflow-y: auto;
+//	&>div{
+//		padding-right: 0;
+//	}
+	
+}
+.lupus-scroll::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+
+	margin-right:-10px;
+
+
+}
+
+.lupus-scroll::-webkit-scrollbar-thumb {
+	background-color: rgba(255,255,255,0.4);
+	-webkit-box-shadow: inset 1px 1px 0 rgba(255,255,255,0.10),inset 0 -1px 0 rgba(255,255,255,0.07);
+}
+
+.lupus-scroll::-webkit-scrollbar-button {
+	width: 0;
+	height: 0;
+	display: none;
+}
+
+.lupus-scroll::-webkit-scrollbar-corner {
+	background-color: transparent;
+}

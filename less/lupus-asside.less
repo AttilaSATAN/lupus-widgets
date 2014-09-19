@@ -1,0 +1,36 @@
+.right-aside {
+	-webkit-transition: .5s;
+	transition: .5s;
+	position: fixed;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: @menu-color;
+	z-index: 1004;
+	&.open {
+		width:100% !important;
+	}
+}
+.left-aside {
+	-webkit-transition: .5s;
+	transition: .5s;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background-color: @menu-color;
+	z-index: 1004;
+	&.open {
+		width:100% !important;
+	}
+}
+//TODO.left-asside-offset olarak değişmeli
+.lupus-asside-offset{
+	.col-xs-offset-2();
+	-webkit-transition: .5s;
+	transition: .5s;
+	&.open{
+		-webkit-transform: translate(100%,0) !important;
+		transform: translate(100%, 0) !important;
+	}
+}
