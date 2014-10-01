@@ -1,12 +1,23 @@
+// main: lupus.less
 .lupus-slide-master{
+	background: url(/modules/lupus-widgets/img/loading.gif) center center no-repeat;
 	overflow: hidden;
 	height: 100%;
-	.lupus-slide-master-slide-wrapper{
+	.lupus-slide-master-slide-wrapper {
 		height: 100%;
 		float:left;
 	}
-	.lupus-slide-master-main-wrapper{
+	.lupus-slide-master-main-wrapper {
 		height: 100%;
+		-webkit-transition:opacity 0.5s ease-in-out, transform 5s ease-in-out;
+		transition:opacity 0.5s ease-in-out, transform 5s ease-in-out;
+		&.slideChange {
+			-webkit-transition: transform 0.7s ease-in-out;
+			transition: transform 0.7s ease-in-out;
+		}
+		&.loading {
+			opacity: 0;
+		}
 		&:after{
 			clear: both;
 		}

@@ -1,4 +1,4 @@
-lupus-slide-master
+lupus-widgets
 ==================
 
-MEANJS and Bootstrap Compatible Slider with Preloading
+MEANJS and Bootstrap Compatible Widgets and tools
